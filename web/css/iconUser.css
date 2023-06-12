@@ -1,0 +1,53 @@
+.user__content{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    /* căn giữa icon  */
+    text-align: center;
+    line-height: 40px;
+    margin-left: 0.8rem;
+    border-radius: 25px;
+    font-size: 20px;
+    color: black;
+    transition: all 0.5s;
+}
+
+
+.user__content:hover{
+    background-color: #ff4f81;
+    border-color: white;
+}
+.user__content{
+    position: relative;
+    transition: all 0.5s;
+}
+.user__menu {
+    position: absolute;
+    background-color:  rgba(0,0,0,0.6);
+    list-style: none;
+    width: 200px;
+    margin: 0;
+    display: none;
+}
+.user__menu li {
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+.user__menu li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.user__content:hover .user__menu{
+    display: block;
+}
+
+.user__menu li a:hover{
+    color: #ff4f81;
+}
+   

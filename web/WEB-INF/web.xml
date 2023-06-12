@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <filter>
+        <filter-name>FilterAdmin</filter-name>
+        <filter-class>filter.FilterAdmin</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterAdmin</filter-name>
+        <url-pattern>/Manage.jsp</url-pattern>
+        <url-pattern>/EditAccount.jsp</url-pattern>
+        <url-pattern>/EditCategory.jsp</url-pattern>
+        <url-pattern>/EditProduct.jsp</url-pattern>
+        <url-pattern>/ManageAccount.jsp</url-pattern>
+        <url-pattern>/ManageCategory.jsp</url-pattern>
+        <url-pattern>/ManageOrder.jsp</url-pattern>
+        <url-pattern>/ManageProduct.jsp</url-pattern>
+        <url-pattern>/addaccount</url-pattern>
+        <url-pattern>/addcategory</url-pattern>
+        <url-pattern>/addproduct</url-pattern>
+        <url-pattern>/deleteaccount</url-pattern>
+        <url-pattern>/deletecategory</url-pattern>
+        <url-pattern>/deleteproduct</url-pattern>
+        <url-pattern>/editaccount</url-pattern>
+        <url-pattern>/editcategory</url-pattern>
+        <url-pattern>/editproduct</url-pattern>
+        <url-pattern>/loadcategory</url-pattern>
+        <url-pattern>/manageaccount</url-pattern>
+        <url-pattern>/managecategory</url-pattern>
+        <url-pattern>/manageorder</url-pattern>
+        <url-pattern>/manageproduct</url-pattern>
+        <url-pattern>/manageproductcategory</url-pattern>
+        <url-pattern>/approved</url-pattern>
+        <url-pattern>/pendingapproval</url-pattern>
+        <url-pattern>/loadproduct</url-pattern>
+        <url-pattern>/loaduser</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>FilterUser</filter-name>
+        <filter-class>filter.FilterUser</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterUser</filter-name>
+        <url-pattern>/BuyOrder.jsp</url-pattern>
+        <url-pattern>/Info.jsp</url-pattern>
+        <url-pattern>/Profile.jsp</url-pattern>
+        <url-pattern>/buyorder</url-pattern>
+        <url-pattern>/order</url-pattern>
+        <url-pattern>/processorder</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
